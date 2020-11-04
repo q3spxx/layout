@@ -31,7 +31,7 @@ export function UnitLayout({ navigationSidebar, navigationHeader, navigationStru
 
     useEffect(() => {
         setLayoutMode(getStructureState() as LayoutModes);
-    }, []);
+    }, [setLayoutMode]);
 
     useEffect(() => {
         if (layoutMode === LayoutModes.STRUCTURE_OPEN) {
