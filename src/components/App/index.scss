@@ -1,56 +1,59 @@
 .navigationSidebar {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    background: repeating-linear-gradient(
-        -55deg,
-        #32292F,
-        #32292F 10px,
-        #42393F 10px,
-        #42393F 20px
-    );  
+    background: repeating-linear-gradient(-55deg, #32292f, #32292f 10px, #42393f 10px, #42393f 20px);
 }
 
 .navigationStructure {
     display: inline-block;
+    overflow: hidden;
     width: 100%;
     height: 100%;
-    background: repeating-linear-gradient(
-        -55deg,
-        #6E7DCB,
-        #6E7DCB 10px,
-        #7E8DCB 10px,
-        #7E8DCB 20px
-    );  
+    background: repeating-linear-gradient(-55deg, #6e7dcb, #6e7dcb 10px, #7e8dcb 10px, #7e8dcb 20px);
 }
 
 .navigationHeader {
-    display: inline-block;
+    display: flex;
     width: 100%;
-    height: 100%; 
-    background: repeating-linear-gradient(
-        -55deg,
-        #575366,
-        #575366 10px,
-        #676376 10px,
-        #676376 20px
-    );  
+    height: 100%;
+    background: repeating-linear-gradient(-55deg, #575366, #575366 10px, #676376 10px, #676376 20px);
+}
+
+.navigationHeader2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(-55deg, #575366, #575366 10px, #676376 10px, #676376 20px);
+}
+
+.navigationHeader2 > ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .content {
-    display:inline-block;
-    background: repeating-linear-gradient(
-        -55deg,
-        #5762D5,
-        #5762D5 10px,
-        #6772E5 10px,
-        #6772E5 20px
-    );  
-    color:#eee;
+    display: inline-block;
+    background: repeating-linear-gradient(-55deg, #5762d5, #5762d5 10px, #6772e5 10px, #6772e5 20px);
+    color: #eee;
 
     p {
         background: none;
         margin: 10px;
         font-size: 38px;
     }
+}
+
+a {
+    font-size: 12px;
+}
+
+button {
+    min-width: 60px;
+}
+
+ul {
+    list-style: none;
 }
